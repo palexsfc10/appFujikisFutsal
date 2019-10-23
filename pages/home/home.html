@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card *ngFor="let item of lista">
+    <img [src]="item.imagem"/>
+    <ion-card-content>
+      <ion-card-title>
+      </ion-card-title>
+        <button ion-button color="dark" (click)="abreHistoria(item)" block>Artilharia 2019</button>
+        <button ion-button block color="light">Fujikis 20 Anos</button>
+        <button ion-button color="light" block>Estatísticas</button>
+        <button ion-button color="light" block>Atletas</button>
+        <button ion-button color="light" block>Mensalidades</button>
+    
+    
